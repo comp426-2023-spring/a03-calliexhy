@@ -7,11 +7,9 @@ const args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
     displayHelp();
-    process.exit(0);
 }
 if (args.r || args.rules) {
     displayRules();
-    process.exit(0);
 }
 
 try {
@@ -34,6 +32,7 @@ function displayHelp() {
           node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
                             e.g {"player":"rock","opponent":"Spock","result":"lose"}`
     );
+    process.exit(0);
 }
 
 function displayRules() {
@@ -50,4 +49,6 @@ function displayRules() {
         - Spock VAPORIZES Rock
         - Rock CRUSHES Scissors`
     );
+    process.exit(0);
+
 }
