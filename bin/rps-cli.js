@@ -19,7 +19,7 @@ try{
 } catch (error){
     if (error instanceof RangeError){
         displayRules();
-        process.exit(0);
+        process.exit();
     }
 }
 
