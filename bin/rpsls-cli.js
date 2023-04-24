@@ -18,7 +18,6 @@ try {
     console.log(JSON.stringify(rpsls(args._[0])));
 } catch (RangeError){
     displayRules()
-    process.exit(0)
 }
 
 function displayHelp() {
