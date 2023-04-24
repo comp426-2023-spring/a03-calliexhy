@@ -42,5 +42,4 @@ function displayRules (){
         - Scissors CUTS Paper
         - Paper COVERS Rock
         - Rock CRUSHES Scissors`);
-    process.exit(0);
 }
