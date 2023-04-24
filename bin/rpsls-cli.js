@@ -15,7 +15,7 @@ if (args.r || args.rules) {
 }
 
 try {
-    console.log(JSON.stringify(rps(args._[0])));
+    console.log(JSON.stringify(rpsls(args._[0])));
 } catch (RangeError){
     displayRules()
     process.exit(0)
