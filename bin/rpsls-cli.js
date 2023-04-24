@@ -14,11 +14,12 @@ if (args.r || args.rules) {
     process.exit(0);
 }
 
-try {
-    console.log(JSON.stringify(rpsls(args._[0])));
-} catch (RangeError){
-    displayRules()
-    process.exit(0)
+try{
+    console.log(JSON.stringify(rpsls(argument._[0])));
+} catch (error){
+    if (error instanceof RangeError){
+        displayRules();
+    }
 }
 
 function displayHelp() {
